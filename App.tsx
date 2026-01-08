@@ -17,6 +17,9 @@ import { Locations } from './pages/Locations';
 import { Help } from './pages/Help';
 import { Dashboard } from './pages/Dashboard';
 import { TransactionDetail } from './pages/TransactionDetail';
+import { TransferFunds } from './pages/TransferFunds';
+import { BillPay } from './pages/BillPay';
+import { CardManagement } from './pages/CardManagement';
 
 function App() {
   return (
@@ -37,6 +40,9 @@ function App() {
           <Route path="/locations" element={<Locations />} />
           <Route path="/help" element={<Help />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/transfers" element={<TransferFunds />} />
+          <Route path="/dashboard/billpay" element={<BillPay />} />
+          <Route path="/dashboard/cards" element={<CardManagement />} />
           <Route path="/transaction/:id" element={<TransactionDetail />} />
         </Routes>
       </Layout>

@@ -45,3 +45,20 @@ export interface Transaction {
   location?: string;
   time: string;
 }
+
+export interface Account {
+  id: string;
+  name: string;
+  type: 'checking' | 'savings' | 'credit';
+  balance: number;
+  accountNumber: string;
+}
+
+export interface Biller {
+  id: string;
+  name: string;
+  category: string;
+  lastPaid: string;
+  amountDue: number;
+  dueDate: string;
+}
